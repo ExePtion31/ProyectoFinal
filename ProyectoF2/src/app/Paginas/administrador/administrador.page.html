@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start" >
+      <ion-menu-button name="MAdmin"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Registrar Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <form>
+    <div class="ion-text-center">
+      <h1>Registrar Usuario</h1>
+      <ion-icon name="person-add-outline" class="foto"></ion-icon> <br>
+      <ion-button color="warning">Tomar Foto<ion-icon name="camera" class="camara"></ion-icon></ion-button>
+    </div>
+    <input placeholder="Nombres" type="text" [(ngModel)]= "nombre" name="nombre" required>
+    <input placeholder="Apellidos" type="text" [(ngModel)]= "apellido" name="apellido" required>
+    <div class="carrera">
+      <label>Carrera: </label>
+      <select [(ngModel)]= "carrera" name="carrera" class="ion-text-center" required>
+        <option value="Arquitectura">Arquitectura</option>
+        <option value="Cine y Televisión">Cine y Televisión</option>
+        <option value="Comunicación Social">Comunicación Social</option>
+        <option value="Gastronomía">Gastronomía</option>
+        <option value="Administración de empresas">Administración de empresas</option>
+        <option value="Hotelería y Turismo">Hotelería y Turismo</option>
+        <option value="Negocios Internacionales">Negocios Internacionales</option>
+        <option value="Desarrollo de Software">Desarrollo de Software</option>
+        <option value="Ingeniería en Telecomunicaciones">Ingeniería en Telecomunicaciones</option>
+        <option value="Ingenieria Mecatrónica">Ingenieria Mecatrónica</option>
+      </select>
+    </div>
+    <input placeholder=" Número de Documento" type="text" [(ngModel)]= "documento" name="documento" required>
+    <input placeholder="Correo" type="text" [(ngModel)]= "email" name="email" required>
+    <div class="cargo">
+      <label>Cargo: </label>
+      <select [(ngModel)]= "rango" name="rango" class="ion-text-center" required>
+        <option value="Estudiante">Estudiante</option>
+        <option value="Administrador">Administrador</option>
+      </select>
+    </div>
+    <input placeholder="Contraseña" type="password" [(ngModel)]= "password" name="password" required>
+    <button (click)= "carga()">Registrar </button>
+  </form> 
+</ion-content>

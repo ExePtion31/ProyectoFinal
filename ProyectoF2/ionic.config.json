@@ -1,0 +1,8 @@
+{
+  "name": "camara",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

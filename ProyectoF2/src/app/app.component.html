@@ -1,0 +1,69 @@
+<ion-app>
+
+  <!--MENU USUARIO-->
+  <ion-menu side="start" menu-id="MUsuario">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button name="MUsuario"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menú Principal</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list *ngFor= "let items of usuario">
+       <ion-menu-toggle menu="MUsuario">
+         <ion-item (click)= "funcionusuario(items.Funcion)">{{items.Nombre}}
+           <ion-icon [name]="items.Icono" slot="start" color="secondary"></ion-icon>
+          </ion-item>
+       </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+
+   <!--MENU ADMINISTRADOR-->
+   <ion-menu side="start" menu-id="MAdmin">
+    <ion-header>
+      <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+          <ion-menu-button name="MAdmin"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menú Administrador</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list *ngFor= "let items of administrador">
+       <ion-menu-toggle menu="MAdmin">
+         <ion-item (click)= "funcionadmin(items.Funcion)" >{{items.Nombre}}
+           <ion-icon [name]="items.Icono" slot="start" color="warning"></ion-icon>
+          </ion-item>
+       </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!--MENU ESTUDIANTE-->
+  <ion-menu side="start" menu-id="MEstudiante">
+    <ion-header>
+      <ion-toolbar color="medium">
+        <ion-buttons slot="start">
+          <ion-menu-button name="MEstudiante"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menú Estudiante</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list *ngFor= "let items of estudiante">
+       <ion-menu-toggle menu="MEstudiante">
+         <ion-item (click)= "funcionestudiante(items.Funcion)" >{{items.Nombre}}
+           <ion-icon [name]="items.Icono" slot="start" color="tertiary"></ion-icon>
+          </ion-item>
+       </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app>
+

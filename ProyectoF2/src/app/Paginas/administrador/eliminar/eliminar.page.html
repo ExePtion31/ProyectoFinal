@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start" >
+      <ion-menu-button name="MAdmin"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="titulo">Eliminar Usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+
+  <form class="searchform cf">
+    <input type="text" placeholder="Buscar usuario..." [(ngModel)]= "filtrartext" name="filtrartext">
+    <button type="submit" color="danger">Buscar</button>
+  </form>
+<br><br><br>    
+  <ion-card *ngFor= "let items of datos | filtro:filtrartext">
+   <ion-card-header>
+    <ion-title class="titulo2">{{items.nombre}} {{items.apellido}}</ion-title>
+   </ion-card-header> 
+   <ion-card-content>
+    <label><b>ID del usuario:</b> {{items.id}}</label> <br>
+    <label><b>Carrera:</b> {{items.carrera}}</label> <br>
+    <label><b>Número de Documento:</b> {{items.documento}}</label> <br>
+    <label><b>Correo:</b> {{items.correo}}</label> <br>
+    <label><b>Cargo:</b> {{items.rango}}</label> <br>
+    <label><b>Contraseña:</b> {{items.password}}</label> <br>
+    <ion-button expand="full" (click)= "eliminarusu(items.id)" class="botonelimi">ELIMINAR <ion-icon name="close"></ion-icon></ion-button>
+   </ion-card-content>
+  </ion-card>
+</ion-content>

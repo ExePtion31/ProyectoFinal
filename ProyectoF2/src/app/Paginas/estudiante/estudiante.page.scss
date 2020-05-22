@@ -1,0 +1,109 @@
+$color: #F90240;
+
+ion-title{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+ion-content.background{
+  --background: url("../../../assets/img/fondo2.jpg") 0 0/100% 100% no-repeat;
+}
+
+h1, input::-webkit-input-placeholder, button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    font-weight: bold;
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(to right, #5072D6, #1047A9);
+    color: white;
+    line-height: 150%;
+    border: none;
+  }
+
+ion-icon.foto{
+    font-size: 200px;
+}
+
+ion-icon.camara{
+    margin-left: 10px;
+}
+
+form {
+  box-sizing: border-box;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 5px 1px #767475;
+  padding-bottom: 40px;
+  border-radius: 3px;
+  h1 {
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  background-color: #fff;
+}
+
+label {
+  margin: 40px 25px;
+  width: 300px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #1047A9;  
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #24C6DC 4%);
+  background-position: -300px 0;
+  background-size: 300px 100%;
+  background-repeat: no-repeat;
+  color: darken(#474959, 20%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: #000;
+      font-size: 9px;
+      transform: translateY(-15px);
+      visibility: visible !important;
+    }
+  }
+}
+
+ion-button{
+    font-weight: bold;
+}
+
+
+.follow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  background: #03A9F4;
+  display: inline-block;
+  margin: 50px calc(50% - 21px);
+  white-space: nowrap;
+  padding: 13px;
+  box-sizing: border-box;
+  color: white;
+  transition: all 0.2s ease;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
+  i {
+    margin-right: 20px;
+    transition: margin-right 0.2s ease;
+  }
+  &:hover {
+    width: 134px;
+    transform: translateX(-50px);
+    i {
+      margin-right: 10px;
+    }
+  }
+}

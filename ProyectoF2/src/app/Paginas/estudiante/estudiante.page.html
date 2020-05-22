@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start" >
+      <ion-menu-button menu-id="MEstudiante"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Consultar Información</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <form>
+    <div class="ion-text-center">
+      <h1>{{Nombre}} {{Apellido}}</h1>
+      <ion-icon name="person-circle-outline" class="foto"></ion-icon>
+    </div>
+    <label><b>Correo:</b> {{Correo}}</label>
+    <label><b>Documento:</b> {{Documento}}</label>
+    <label><b>Carrera:</b> {{Carrera}}</label>
+    <label><b>Cargo:</b> {{Cargo}}</label>
+  </form> 
+</ion-content>

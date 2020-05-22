@@ -1,0 +1,22 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" >
+      <ion-menu-button name="menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background"> 
+  <form>
+    <div class="ion-text-center">
+      <h1>Iniciar Sesión</h1>
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </div>
+    <input placeholder="Correo electronico" type="text" name="email" [(ngModel)]="email" required>
+    <input placeholder="Contraseña" type="password" name="password" [(ngModel)]="password" required>
+    <button (click)= "onLogin()">Acceder</button>
+    <div class="divfinal">
+      <p routerLink="../registro">¿Aún no tienes cuenta? <a>Registrate Aquí</a></p>
+    </div>
+  </form> 
+</ion-content>

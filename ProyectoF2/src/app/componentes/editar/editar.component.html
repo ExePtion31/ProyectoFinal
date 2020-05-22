@@ -1,0 +1,36 @@
+<ion-content class="background" >
+  <form>
+    <div class="ion-text-center">
+      <h1>Modificar Usuario</h1>
+      <ion-icon name="person-outline" class="foto"></ion-icon> <br>
+      <ion-button color="warning">Cambiar Foto<ion-icon name="camera" class="camara"></ion-icon></ion-button>
+    </div>
+    <input placeholder="Nombres" type="text" name="nombre" [(ngModel)]= "nombre" required>
+    <input placeholder="Apellidos" type="text" name="apellido" [(ngModel)]= "apellido" required>
+    <div class="carrera">
+      <label>Carrera: </label>
+      <select [(ngModel)]= "carrera" name="carrera" class="ion-text-center" required>
+        <option value="Arquitectura">Arquitectura</option>
+        <option value="Cine y Televisión">Cine y Televisión</option>
+        <option value="Comunicación Social">Comunicación Social</option>
+        <option value="Gastronomía">Gastronomía</option>
+        <option value="Administración de empresas">Administración de empresas</option>
+        <option value="Hotelería y Turismo">Hotelería y Turismo</option>
+        <option value="Negocios Internacionales">Negocios Internacionales</option>
+        <option value="Desarrollo de Software">Desarrollo de Software</option>
+        <option value="Ingeniería en Telecomunicaciones">Ingeniería en Telecomunicaciones</option>
+        <option value="Ingenieria Mecatrónica">Ingenieria Mecatrónica</option>
+      </select>
+    </div>
+    <input placeholder=" Número de Documento" type="text" name="documento" [(ngModel)]= "documento" required>
+    <div class="cargo" >
+      <label>Cargo: </label>
+      <select [(ngModel)]= "rango" name="rango" class="ion-text-center" required>
+        <option value="Estudiante">Estudiante</option>
+        <option value="Administrador">Administrador</option>
+      </select>
+    </div>
+    <button (click)="cerrar()">CANCELAR</button>
+    <button (click)="modificar()" >MODIFICAR</button>
+  </form> 
+</ion-content>

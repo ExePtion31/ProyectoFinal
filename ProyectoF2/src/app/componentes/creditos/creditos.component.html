@@ -1,0 +1,28 @@
+<ion-content class="background">
+  <div class="wrapper">
+    <h1>DESARROLLADORES</h1>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor= "let items of informacion">
+        <ion-card class="ion-text-center">
+          <label><h3>{{items.Nombre}}</h3></label>
+          <ion-img [src]= "items.Foto"></ion-img>
+          <b>Carrera:</b><br>
+          <label> {{items.Carrera}}</label>
+          <hr class="hr2">
+          <b>Edad:</b>
+          <label> {{items.Edad}}</label>
+          <hr class="hr2">
+          <b>Semestre:</b>
+          <label> {{items.Semestre}}</label>
+          <hr class="hr2">
+          <b>email:</b><br>
+          <label> {{items.email}}</label>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <button (click)= "cerrar()">CERRAR </button>
+</ion-content>

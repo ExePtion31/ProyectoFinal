@@ -1,0 +1,32 @@
+ion-content.background{
+  --background: url("../../../assets/img/fondo.jpg") 0 0/100% 100% no-repeat;
+}
+
+
+hr{
+  font-weight: bold;
+  background: #fff;
+  width: 96%;
+  height: 3px;
+}
+
+ion-card{
+  box-shadow: 2px 2px 5px 1px #6E6E6F;
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+h3{
+  font-weight: bold;
+  color: #7b4397;
+}
+
+label{
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+}

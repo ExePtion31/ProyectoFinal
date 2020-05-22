@@ -1,0 +1,94 @@
+
+ion-content.background{
+    --background: url("../../../assets/img/fondo4.jpg") 0 0/100% 100% no-repeat;
+  }
+/*-------------------------------------TITULO---------------------------------*/
+@font-face {
+	font-family: "ubuntu";
+	font-style: italic;
+	font-weight: 300;
+	src: local("Lato Light Italic"), local("Lato-LightItalic"),
+		url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2)
+			format("woff2");
+}
+
+.wrapper {
+	text-align: center;
+	h1 {
+		color: #fff;
+		font-size: 30px;
+		font-family: "ubuntu";
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: "Josefin Sans", sans-serif;
+		background: linear-gradient(to right, #110AF8 10%, #fff 50%, #92FE9D 60%);
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #fff;
+		background-clip: text;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip 1.5s linear infinite;
+		display: inline-block;
+	}
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+
+/*--------------------------------CONTENIDO--------------------------------------*/
+
+
+h3{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    text-shadow: 2px 3px 2px rgba(99, 99, 100, 0.79);
+}
+
+label{
+    text-align: center;
+    color: #000;
+}
+
+b{
+    font-size: 18px;
+    color: #1A01F9;
+}
+
+hr.hr2{
+    background: rgb(92, 91, 91);
+    width: 70%;
+    height: 1px;
+} 
+
+ion-card{
+    box-shadow: 5px 4px 9px -1px #636662;
+}
+
+/*------------------------------BOTON---------------------------------------*/
+button {
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    left: 35%;
+    border: none;
+    background: linear-gradient(to right, #1A01F9, #0689F6);
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 6px;
+    width: 110px;
+    height: 35px;
+    color: white;
+    box-shadow: 2px 2px 5px 1px #767475;
+    &:hover { 
+      transform: translateY(-3px);
+      box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+    }
+  }

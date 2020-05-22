@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button menu-id="MUsuario"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <b class="titulo">Funcionamiento de la App</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <h1>FUNCIONES DE USUARIO:</h1>
+  <ion-card *ngFor= "let items of usuario" >
+    <ion-card-title class="ion-text-center">
+      <h3>{{items.Titulo}}</h3>
+    </ion-card-title>
+    <ion-card-content>
+      <label>{{items.Descripcion}}</label>
+      <img [src]= "items.img">
+    </ion-card-content>
+  </ion-card>
+  <hr>
+  <h1>FUNCIONES DE ESTUDIANTE:</h1>
+  <ion-card *ngFor= "let items of estudiante" >
+    <ion-card-title class="ion-text-center">
+      <h3>{{items.Titulo}}</h3>
+    </ion-card-title>
+    <ion-card-content>
+      <label>{{items.Descripcion}}</label>
+      <img [src]= "items.img">
+    </ion-card-content>
+  </ion-card>
+  <hr>
+  <h1>FUNCIONES DE ADMINSITRADOR:</h1>
+  <ion-card *ngFor= "let items of administrador" >
+    <ion-card-title class="ion-text-center">
+      <h3>{{items.Titulo}}</h3>
+    </ion-card-title>
+    <ion-card-content>
+      <label>{{items.Descripcion}}</label>
+      <img [src]= "items.img">
+      <img [src]= "items.img2">
+    </ion-card-content>
+  </ion-card>
+</ion-content>
